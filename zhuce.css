@@ -1,0 +1,40 @@
+.w {
+    width: 1000px;
+    height: 600px;
+    margin: 100px auto;
+    /* background-color: pink; */
+}
+
+
+.title {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: skyblue; */
+}
+
+.title h2 {
+    border-bottom: 3px solid #22ac38;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.big {
+    display: inline-block;
+    cursor: pointer;
+    width: 196px;
+    padding: 10px 0 8px;
+    /* height: 20px;
+    line-height: 20px; */
+    font-size: 16px;
+
+    border: 1px solid #22ac38;
+    color: #FFF;
+    background: #22ac38;
+}

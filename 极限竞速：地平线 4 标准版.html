@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>极限竞速：地平线 4 标准版</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Red Dead Redemption 2.css">
+</head>
+
+<body>
+    <!-- 左侧导航区 -->
+    <div class="nav clearfix">
+        <!-- logo -->
+        <div class="nav-hd">
+            <img class="logo" src="images/logo.png" alt="">
+            <span>steam DD市场</span>
+        </div>
+        <!-- 导航栏  -->
+        <div class="nav-bd">
+            <!-- 每一个菜单栏项 -->
+            <ul id="accordion" class="accordion">
+                <li>
+                    <!-- 主标题 -->
+                    <div class="link">
+                        <span class="icomoon"></span>热门游戏<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <ul class="submenu">
+                        <li>
+                            <a href="Red Dead Redemption 2.html">荒野大镖客2</a>
+                        </li>
+                        <li>
+                            <a href="Call of Duty.html">使命召唤19</a>
+                        </li>
+                        <li>
+                            <a href="Alden ring.html">艾尔登法环</a>
+                        </li>
+                        <li>
+                            <a href="极限竞速：地平线 4 标准版.html">地平线4</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 主标题 -->
+                    <div class="link">
+                        <span class="icomoon"></span>游戏榜<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <ul class="submenu">
+                        <li>
+                            <a href="javascript:void(0)">热销商品</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">年度最佳</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 主标题 -->
+                    <div class="link">
+                        <span class="icomoon"></span>资讯<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <ul class="submenu">
+                        <li>
+                            <a href="epic新闻.html" target="_blank">Epic免费游戏</a>
+                        </li>
+                        <!-- <li>
+                            <a href="javascript:void(0)">steam史低推荐</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li>
+                    <!-- 主标题 -->
+                    <div class="link">
+                        <span class="icomoon"></span>账号管理<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <ul class="submenu">
+                        <li>
+                            <a href="登录.html" target="_blank">登录</a>
+                        </li>
+                        <li>
+                            <a href="注册.html" target="_blank">注册</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- 主标题 -->
+                    <div class="link">
+                        <span class="icomoon"></span>关于作者<i class="fa fa-chevron-down"></i>
+                    </div>
+                    <!-- 子标题 -->
+                    <ul class="submenu">
+                        <li>
+                            <a href="网页设计课程作品报告.pdf" target="_blank">网页设计报告</a>
+                        </li>
+                        <li>
+                            <a href="个人介绍.pdf" target="_blank">个人介绍</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 联系方式 -->
+                <div class="contactTip">
+                    <p class="contactp">欢迎交流 官方qq</p>
+                    <p class="contactp">2057455153</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- JS部分 -->
+    <script type="text/javascript">
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+                var links = this.el.find('.link');
+                links.on('click', {
+                    el: this.el,
+                    multiple: this.multiple
+                }, this.dropdown);
+            };
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this), $next = $this.next();
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                }
+                ;
+            };
+            var accordion = new Accordion($('#accordion'), false);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- 置顶栏 -->
+    <div class="header">
+        <!-- 首页 -->
+        <div class="home">
+            <ul>
+                <li><a href="index.html"><span class="icomoon"></span>首页</a></li>
+                <!-- <li><a href="#">账号设置</a></li> -->
+            </ul>
+        </div>
+        <!-- 搜索模块 -->
+        <!-- <div class="search">
+                <input type="text" value="输入关键词">
+                <button></button>
+            </div> -->
+        <!-- 用户模块 -->
+        <div class="user">
+            <ul>
+                <li><a href="登录.html" target="_blank">登录</a></li>
+                <li><a href="注册.html" target="_blank">注册</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 商品区 -->
+    <html>
+    <div class="big">
+        <div class="market-content">
+            <div class="market-detail">
+                <div class="position-relative">
+                    <!-- 返回按钮 -->
+                    <a href="index.html">
+                        <div class="back">
+                            <img src="images/箭头.png" width="18" height="18">
+                            <span class="fanhui">返回</span>
+                        </div>
+                    </a>
+                    <!-- 返回按钮结束 -->
+                </div>
+
+                <!-- 商品界面 -->
+                <div class="goods">
+                    <div class="lt">
+                        <img class="photo" src="images/dipingxian.jpg" alt="">
+                        <div class="info">
+                            在世界上最盛大的汽车嘉年华上，不断变化的赛季改变着一切。单枪匹马或者与其他人组队，在一个共享开放世界中探索美丽而富有历史气息的英国。收集、改装和驾驶超过 450
+                            辆车辆。尽情竞速、表演特技、创造和探索：选择您专属的方式来成为地平线中的超级巨星。
+                        </div>
+                    </div>
+
+                    <div class="rt">
+                        <div>
+                            <div class="gameName">极限竞速：地平线 4 标准版</div>
+                            <div class="EnglishName">Extreme Speed: Horizon 4 Standard</div>
+                            <div class="pingfen">
+                                <span class="icomoon"></span>
+                                游戏评测: 特别好评(147,783)
+                            </div>
+                        </div>
+                        <div class="Price-info">
+                            <span class="linedel">￥188</span>
+                            <span class="Special">特价促销:</span>
+                            <span class="fuhao">￥</span>
+                            <span class="Price">58.94</span>
+                            <span class="Discount"> -69% </span>
+                        </div>
+                        <!-- 登录-->
+                        <div class="go">
+                            <a href="index.html">立即购买</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </html>
+
+</body>
+
+
+</html>

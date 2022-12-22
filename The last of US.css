@@ -1,0 +1,537 @@
+/* 字体声明 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?7rmkhz');
+    src: url('fonts/icomoon.eot?7rmkhz#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7rmkhz') format('truetype'),
+        url('fonts/icomoon.woff?7rmkhz') format('woff'),
+        url('fonts/icomoon.svg?7rmkhz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+}
+
+/* 版心 */
+/* .w {
+    width: 1500px;
+    margin-left: 320px;
+    background-color: pink;
+} */
+
+/* 设置字体 */
+body {
+    font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+/* 字体图标 */
+.icomoon {
+    font-family: 'icomoon';
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 左侧导航区 */
+.nav {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 220px;
+    height: 961px;
+    background: rgb(97, 98, 109);
+}
+
+.nav-hd {
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    margin: 20px 0 0 20px
+}
+
+
+.nav-hd span {
+    float: left;
+    line-height: 60px;
+    text-align: center;
+    margin-left: 9px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+/* 每一个菜单栏项 */
+.accordion {
+    width: 100%;
+    /* max-width: 360px; */
+    margin: 0px auto 20px;
+    padding-left: 0px;
+    background: #61626d;
+    /* -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; */
+}
+
+/* 主标题的修饰 */
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    /* 设置左右间隔距离 */
+    padding: 14px 25px;
+    color: #FFFFFFB3;
+    font-size: 15px;
+    font-weight: 700;
+    /* border-bottom: 1px solid #CCC; */
+    position: relative;
+    /* -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; */
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 设置字体图标右侧间隔 */
+.accordion .link span {
+    margin-left: 0px;
+    margin-right: 8px;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.link:hover {
+    background-color: #515a6e;
+    color: #fff;
+}
+
+/* 左侧小图标 */
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    font-size: 14px;
+    color: #FFFFFFB3;
+    /* 折叠箭头旋转速度调节 */
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+/* 右侧小图标 */
+.accordion li i.fa-chevron-down {
+    right: 40px;
+    left: auto;
+    font-size: 14px;
+}
+
+/* 无 */
+/* .accordion li.open .link {
+    color: #b63b4d;
+} */
+
+/* .accordion li.open i {
+    color: #b63b4d;
+} */
+
+/* 角度调节 */
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.accordion li.default .submenu {
+    display: block;
+}
+
+
+/* 子标题 */
+.submenu {
+    display: none;
+    padding-left: 0px;
+    background: #363e4f;
+    /* font-size: 14px;
+    padding-left: 0px; */
+}
+
+/* .submenu li {
+    border-bottom: 1px solid #4b4a5e;
+} */
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+    padding-left: 75px;
+    font-size: 15px;
+    color: #FFFFFFB3;
+    /* 鼠标经过颜色切换速度调节 */
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.submenu a:hover {
+    background: #2d8cf0;
+    color: #fff;
+}
+
+/* 联系方式 */
+.contactTip {
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+}
+
+.contactp {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* 右侧内容区 */
+/* .right {
+    margin-left: 220px;
+    width: 1700px;
+    height: 60px;
+} */
+
+/* 顶部 */
+.header {
+    position: fixed;
+    top: 0;
+    margin-left: 220px;
+    width: 1700px;
+    height: 60px;
+    background-color: #61626d;
+    /* background-color: rgba(97, 98, 109, .9); */
+    /* background-color: pink; */
+    /* 注意此地方会层叠 w 里面的margin */
+    /* margin: 30px auto; */
+}
+
+/* 首页模块 */
+.home {
+    float: left;
+    margin-left: 100px;
+}
+
+.home span {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.home ul li {
+    float: left;
+    margin: 0 50px;
+}
+
+.home ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home ul li a:hover {
+    text-decoration: none;
+    /* 下划线 */
+    /* border-bottom: 2px solid #2d8cf0; */
+    /* color: #2d8cf0; */
+    color: #22ac38;
+}
+
+/* 搜索模块 */
+/**
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* 按钮button默认有个边框需要我们手动去掉 */
+/* border: 0; */
+/* background: url(images/btn.png);
+} */
+
+
+/* 用户模块 */
+.user {
+    float: right;
+    margin-right: 100px;
+}
+
+.user ul li {
+    float: right;
+    margin: 0 50px;
+}
+
+.user ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.user ul li a:hover {
+    text-decoration: none;
+    /* 下划线 */
+    /* border-bottom: 2px solid #2d8cf0; */
+    /* color: #2d8cf0; */
+    color: #22ac38;
+
+}
+
+/* .user span {
+    margin-right: 6px;
+    font-size: 20px;
+} */
+
+
+
+/* banner部分 */
+/* 版心 */
+.big {
+    width: 1920px;
+    height: 900px;
+    background-color: #fafafa;
+    /* background-color: pink; */
+}
+
+.big .market-content {
+    margin: 0px 0 0 220px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ccc; */
+}
+
+.market-content .market-detail {
+    width: 1500px;
+    height: 800px;
+    margin: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+
+}
+
+.position-relative {
+    position: relative;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.big:hover {
+    color: #000;
+}
+
+/* 返回按钮 */
+.fanhui {
+    font-size: 15px;
+    margin-left: 5px;
+    color: #000;
+}
+
+.goods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lt {
+    width: auto;
+    height: 500px;
+    /* height: auto; */
+    /* margin-left: 70px; */
+    margin-right: 20px;
+    margin-top: 100px;
+    /* border: 20px solid #22ac38;
+    border-radius: 10px; */
+}
+
+.photo {
+    width: 400px;
+    height: 200px;
+}
+
+.lt .info {
+    margin-top: 5px;
+    width: 460px;
+    font-size: 16px;
+}
+
+.rt {
+    width: auto;
+    height: 500px;
+    /* height: auto; */
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.gameName {
+    font-size: 35px;
+    /* margin-left: 50px; */
+    font-weight: 700;
+}
+
+.EnglishName {
+    color: rgb(153, 153, 153);
+    /* margin-left: 50px; */
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.pingfen {
+    font-size: 20px;
+    /* margin-left: 20px; */
+    margin-top: 20px;
+}
+
+
+
+.Special {
+    font-size: 20px;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.fuhao {
+    font-size: 20px;
+    color: #c80410;
+}
+
+.Price {
+    font-size: 40px;
+    /* margin-left: 5px; */
+    color: #c80410;
+}
+
+.linedel {
+    font-size: 25px;
+    text-decoration: line-through;
+    color: #333333;
+    /* margin-left: 20px; */
+    margin-top: 10px;
+}
+
+.Discount {
+    display: inline-block;
+    width: 68px;
+    height: 30px;
+    background: #c80410;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.go {
+    display: inline-block;
+    cursor: pointer;
+    width: 177px;
+    height: 50px;
+    margin-top: 30px;
+    border: 1px solid #c80410;
+    border-radius: 30px;
+    background: #c80410;
+}
+
+.go a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.go a:hover {
+    text-decoration: none;
+}

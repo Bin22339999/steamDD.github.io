@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        .w {
+            width: 1000px;
+            height: 600px;
+            margin: 100px auto;
+            /* background-color: pink; */
+        }
+
+
+        .title {
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            width: 50px;
+            height: 100px;
+            margin: 0 auto;
+            /* background-color: skyblue; */
+        }
+
+        .title h2 {
+            border-bottom: 3px solid #22ac38;
+        }
+
+        .content {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .big {
+            display: inline-block;
+            cursor: pointer;
+            width: 177px;
+            padding: 10px 0 8px;
+            /* height: 20px;
+    line-height: 20px; */
+            font-size: 16px;
+
+            border: 1px solid #22ac38;
+            color: #FFF;
+            background: #22ac38;
+        }
+
+        .big:hover {
+            background: #09861e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w">
+        <div class="title">
+            <h2>登录</h2>
+        </div>
+        <div class="content">
+            <div class="top">
+                <table width="500">
+                    <!-- 手机号 -->
+                    <tr>
+                        <td>账号:</td>
+                        <td><input type="text" placeholder="手机号"></td>
+                    </tr>
+
+                    <!-- password 密码框 用户看不见输入的密码 -->
+                    <tr>
+                        <td>密码：</td>
+                        <td><input type="password" name="password" placeholder="请输入密码"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="#" style="font-size: 12px;">忘记密码？</a>
+                        </td>
+                    </tr>
+
+
+
+
+
+                    <!-- 登录-->
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a href="index.html"><input class="big" type="submit" value="登录"></a>
+                        </td>
+                    </tr>
+
+
+                    <!--  注册 -->
+                    <tr>
+                        <td></td>
+                        <td>
+                            还没有账号？<a href="注册.html">立即注册</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+</body>
+
+</html>
